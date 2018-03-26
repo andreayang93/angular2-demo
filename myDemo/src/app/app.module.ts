@@ -17,10 +17,10 @@ import {AppRoutingModule} from './app-routing.module'
   imports: [
     BrowserModule,
     FormsModule,
-    MainModule,
-    MainModule,
-    AppRoutingModule,
     ReactiveFormsModule,
+    MainModule,
+    CustomersModule,
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [HttpClient,DataService],

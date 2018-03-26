@@ -1,7 +1,7 @@
 <h1 >Login</h1>
-<form myForm="formGroup">
+<form [formGroup]="myForm">
     <div>
-      <label class="nameInput">
+      <label>
         Name:
         <input type="text" [(ngModel)]="name" [formControl]="myForm.get('name')">
       </label>
@@ -20,4 +20,4 @@
     <button [class.disabled]="myForm.invalid">
       Login
     </button>
-  </form> 
+  </form>

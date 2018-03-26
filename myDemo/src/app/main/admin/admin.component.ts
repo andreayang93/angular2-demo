@@ -8,12 +8,18 @@ import { DataService } from '../../data.service';
   providers:[],
 })
 export class AdminComponent implements OnInit {
-  
-  constructor(dataservice:DataService) { }
-  showData() {
-   
+  public data:any;
+  constructor(private dataservice:DataService) { }
+  ngOnInit() {
+    this.showData();
+    console.log(this.data);
   }
-  ngOnInit() {  
+  public showData() {
+   this.dataservice.getData().subscribe(
+     (data)=>{
+       this.data=data;
+     }
+   );
   }
 
 }
