@@ -1,0 +1,27 @@
+[
+  {
+    "name" : "tom",
+    "profession" : "teacher",
+    "id": 1
+  },
+  {
+    "name" : "dash",
+    "profession" : "librarian",
+    "id": 2
+  },
+  {
+    "name" : "jerry",
+    "profession" : "clerk",
+    "id": 3
+  },
+  {
+    "name" : "bob",
+    "profession" : "worker",
+    "id": 4
+  },
+  {
+    "name" : "sunny",
+    "profession" : "engineer",
+    "id": 5
+  }
+]

@@ -1,0 +1,23 @@
+<h1 >Login</h1>
+<form myForm="formGroup">
+    <div>
+      <label class="nameInput">
+        Name:
+        <input type="text" [(ngModel)]="name" [formControl]="myForm.get('name')">
+      </label>
+      </div>
+    <div>
+      {{getValidatortips(myForm.get('name'))}}
+    </div>
+      <label>
+      Password:
+      <input type="password" [(ngModel)]="password"
+             [formControl]="myForm.get('password')">
+    </label>
+    <div>
+      {{getValidatortips(myForm.get('password'))}}
+    </div>
+    <button [class.disabled]="myForm.invalid">
+      Login
+    </button>
+  </form> 
